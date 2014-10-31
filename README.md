@@ -11,5 +11,5 @@ comes at the cost of extra HTTP requests to load the several files. In productio
 that compiles the local JS files together into one minified JS download (Ruby on Rails does something similar to this out of the box 
 for apps in production mode).
 
-__NOTE__: For this challenge I had to learn Google APIs (Calendar specifically), Google OAuth2, BackboneJS, and SASS all mostly from
+__NOTE__: For this challenge I had to learn Google APIs (Calendar specifically), Google OAuth2, Backbone.js, and SASS all mostly from
 scratch as I have never used any of these so far in my professional projects. So yes, it was a *challenge* for sure :)

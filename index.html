@@ -19,9 +19,19 @@
   </head>
   
   <body>
-    <div class="container">
+    <!-- templates for Backbone views -->
+    <script id="event-template" type="text/template">
+      <div class="row calevent">
+        <div class="col-sm-2"><%= calevent.start.toLocaleTimeString() %></div>
+        <div class="col-sm-2"><%= calevent.duration %></div>
+        <div class="col-sm-8"><%- calevent.title %></div>
+      </div>
+    </script>
+    
+    <!-- main content/application body -->
+    <div id="sgc-app" class="container">
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-sm-12">
           <h2><small>Simple</small> Google <small>Calendar</small></h2>
           <hr/>
           <p>Select a date to show events for that date from all your Google Calendars:</p>
@@ -29,8 +39,17 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-6"><hr/></div>
-        <div class="col-md-6"></div>
+        <div class="col-sm-6"><hr/></div>
+        <div class="col-sm-6"></div>
+      </div>
+      <div class="row">
+       <div id="event-container" class="col-sm-12">
+         <div class="row">
+           <div class="col-sm-2"><h3>Start</h3></div>
+           <div class="col-sm-2"><h3>Duration</h3></div>
+           <div class="col-sm-8"><h3>Title</h3></div>
+         </div>
+       </div> 
       </div>
     </div>
     

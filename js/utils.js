@@ -7,7 +7,7 @@
 
 // Extend Date to output a value acceptable for date input field
 Date.prototype.toDateInputValue = (function() {
-    var local = new Date(this);
-    local.setMinutes(this.getMinutes() - this.getTimezoneOffset());
-    return local.toISOString().substr(0,10);
+  var local = new Date(this);
+  local.setMinutes(this.getMinutes() - this.getTimezoneOffset());
+  return local.toISOString().substr(0,10);
 });
