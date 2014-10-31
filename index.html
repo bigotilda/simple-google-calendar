@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Nathan Simple Google Calendar</title>
+    <meta charset="utf-8">
+    
+    <!-- To keep things simple, I'm loading outside libraries via cdnjs, rather than downloading and making them as part of the local
+         project. -->
+    
+    <!-- I weighed whether or not I should use bootstrap CSS to get some out-of-the-box responsiveness and styling, since maybe
+         you wanted to see me define some responsive CSS manually myself. In the end I opted for using bootstrap, because for real
+         projects, unless there is a requirement not to use pre-existing libraries, I think you should not reinvent the wheel, and 
+         bootstrap is going to do a better job than I could do manually in a short time frame. -->
+         
+    <!-- @TODO if I have time however, I may define some manual CSS that could apply if you choose to comment out the bootstrap CSS
+         here -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.0/css/bootstrap.min.css">
+  </head>
+  
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2><small>Simple</small> Google <small>Calendar</small></h2>
+          <hr/>
+          <p>Select a date to show events for that date from all your Google Calendars:</p>
+          <input id="cal-date" type="date"/> 
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6"><hr/></div>
+        <div class="col-md-6"></div>
+      </div>
+    </div>
+    
+    <!-- javascripts at the bottom to help with page load speed -->
+    <!-- Using backbone.js as the client-side MVC framework which requires jQuery and underscore -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone-min.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/sgc.js"></script>
+  </body>
+</html>
