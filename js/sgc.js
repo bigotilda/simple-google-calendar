@@ -254,10 +254,4 @@ $(function(){
   });
   
   var App = new AppView();
-  
-  /// @TODO TESTING
-  /*var ev1 = new CalEvent();
-  var ev2 = new CalEvent({start: new Date('2014-11-02 00:00:00'), end: new Date('2014-11-02 01:00:00'), title: 'Future Event'});
-  var ev3 = new CalEvent({start: new Date(), end: new Date(new Date().getTime() + (3600 * 1000)), title: 'Future Woohoo Event'});
-  CalEvents.reset([ev1, ev2, ev3]);*/
 });
