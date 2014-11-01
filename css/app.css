@@ -1,0 +1,13 @@
+.hidden {
+  visibility: hidden; }
+
+label {
+  padding-left: 1em; }
+
+@media print {
+  body {
+    width: 100%; }
+
+  background-color: red; }
+
+/*# sourceMappingURL=app.css.map */

@@ -1,0 +1,26 @@
+// Since this app is pretty simple and since I'm using bootstrap for a good amount of the styling, there's not much need
+// for further local styling, but here is some local stuff I added. Again this is mostly so simple you wouldn't really need
+// Sass but I'm using it for illustration (and challenge requirements). I simply used the command line sass program to
+// compile scss files to css.
+
+$formleft: 1em;
+
+.hidden {
+  visibility: hidden;
+}
+
+label {
+  padding-left: $formleft;
+}
+
+// @NOTE I basically ran out of time, but the bootstrap CSS should provide pretty good rough responsiveness for the target devices
+// (iPad, iPad Mini, Samsung Galaxy Tab, etc). With a bit more time I could do some more direct media query rules here, such as those
+// listed at http://stephen.io/mediaqueries/ for example to target the Apple products.
+
+// silly example for illustration of print media rules
+@media print {
+  body {
+    width: 100%;
+  }
+  background-color: red;
+}
