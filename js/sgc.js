@@ -222,18 +222,14 @@ $(function(){
         scope: this.authInfo.scopeReadWrite, immediate: false
       }, function(authResult){
         if (authResult && !authResult.error){
-          console.log('HERE?')
           // @NOTE just default to the first calendar which I think Google always returns your primary calendar first when retrieving the
           // calendar list, but I did not fully verify that....
           var theCalendar = theApp.calendarlist[0];
-          console.log(gapi.client.calendar.events);
-          console.log(theApp.neweventdesc.val());
           var request = gapi.client.calendar.events.quickAdd({
             calendarId: theCalendar,
             text: theApp.neweventdesc.val()
           });
           request.then(function(resp){
-            console.log('success?');
             theApp.neweventdesc.val('');
             theApp.refreshDate();
           }, function(resp){
